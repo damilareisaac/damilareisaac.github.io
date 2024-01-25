@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDI Data Format</title>
+</head>
+<body>
+    <header>
+        <h1>Drug-Drug Interaction (DDI) Data Format</h1>
+    </header>
+    <article>
+        <section>
+            <h2>Overview</h2>
+            <p>
+                The Drug-Drug Interaction (DDI) data format is a standardized way of representing interactions between different pharmaceutical drugs. This format is critical for healthcare providers, pharmacists, and patients to understand possible adverse effects and efficacy issues when multiple drugs are administered together.
+            </p>
+        </section>
+        <section>
+            <h2>DDI Data Structure</h2>
+            <p>
+                The DDI data typically includes the following fields:
+            </p>
+            <ul>
+                <li><strong>Drug A:</strong> The first drug in the interaction pair.</li>
+                <li><strong>Drug B:</strong> The second drug in the interaction pair.</li>
+                <li><strong>Interaction Type:</strong> The type of interaction (e.g., inhibition, induction).</li>
+                <li><strong>Severity:</strong> The severity of the interaction (e.g., minor, moderate, major).</li>
+                <li><strong>Description:</strong> A detailed description of the interaction and its potential effects.</li>
+                <li><strong>Management Recommendations:</strong> Guidelines for managing the interaction.</li>
+                <li><strong>References:</strong> Citations or links to the sources of information.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Format Specifications</h2>
+            <p>
+                The DDI data is often formatted in XML or JSON for ease of integration with various healthcare systems. Below is an example of how DDI data might be structured in JSON format:
+            </p>
+            <pre><code>{
+  "interaction": {
+    "drugA": "Drug A Name",
+    "drugB": "Drug B Name",
+    "interactionType": "Inhibition",
+    "severity": "Major",
+    "description": "Description of the interaction...",
+    "management": "Recommended management strategies...",
+    "references": [
+      "https://example.com/reference1",
+      "https://example.com/reference2"
+    ]
+  }
+}</code></pre>
+        </section>
+        <section>
+            <h2>Usage</h2>
+            <p>
+                DDI data is used by various software systems to alert healthcare professionals of potential drug interactions at the point of prescribing or dispensing. It's also used for patient education and by researchers studying pharmacokinetics and pharmacodynamics.
+            </p>
+        </section>
+    </article>
+    <footer>
+        <p>&copy; 2023 AstraZeneca | DDI Data Format Documentation</p>
+    </footer>
+</body>
+</html>
